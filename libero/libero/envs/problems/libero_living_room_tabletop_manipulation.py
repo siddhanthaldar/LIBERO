@@ -196,6 +196,26 @@ class Libero_Living_Room_Tabletop_Manipulation(BDDLBaseDomain):
                 0.6182177066802979,
             ],
         )
+        mujoco_arena.set_camera(
+            camera_name="leftagentview",
+            pos=[0.6586131746834771, -0.5, 1.6103500240372423],
+            quat=[
+                1.0,
+                0.65,
+                0.3,
+                0.6380177736282349,
+            ],
+        )
+        mujoco_arena.set_camera(
+            camera_name="rightagentview",
+            pos=[0.6586131746834771, 0.5, 1.6103500240372423],
+            quat=[
+                0.26,
+                0.2,
+                0.30484986305236816,
+                0.6380177736282349,
+            ],
+        )
 
         # For visualization purpose
         mujoco_arena.set_camera(
