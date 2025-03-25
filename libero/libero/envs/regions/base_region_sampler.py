@@ -90,8 +90,8 @@ class MultiRegionRandomSampler(ObjectPositionSampler):
             float: sampled y position
         """
         minimum, maximum = self.y_ranges[self.idx]
-        # minimum -= 0.05
-        # maximum += 0.05
+        # minimum -= 0.1
+        # maximum += 0.1
         if self.ensure_object_boundary_in_range:
             minimum += object_horizontal_radius
             maximum -= object_horizontal_radius
