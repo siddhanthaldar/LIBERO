@@ -193,6 +193,26 @@ class Libero_Floor_Manipulation(BDDLBaseDomain):
             ],
         )
         mujoco_arena.set_camera(
+            camera_name="agentviewleft",
+            pos=[0.8965773716836134, -0.03, 0.65],
+            quat=[
+                0.6182166934013367,
+                0.3432307541370392,
+                0.3432314395904541,
+                0.6182177066802979,
+            ],
+        )
+        mujoco_arena.set_camera(
+            camera_name="agentviewright",
+            pos=[0.8965773716836134, 0.03, 0.65],
+            quat=[
+                0.6182166934013367,
+                0.3432307541370392,
+                0.3432314395904541,
+                0.6182177066802979,
+            ],
+        )
+        mujoco_arena.set_camera(
             camera_name="leftagentview",
             pos=[0.6586131746834771, -0.5, 1.6103500240372423],
             quat=[

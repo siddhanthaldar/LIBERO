@@ -196,6 +196,26 @@ class Libero_Tabletop_Manipulation(BDDLBaseDomain):
             ],
         )
         mujoco_arena.set_camera(
+            camera_name="agentviewleft",
+            pos=[0.8586131746834771, 0.03, 1.6103500240372423],
+            quat=[
+                0.6380177736282349,
+                0.3048497438430786,
+                0.30484986305236816,
+                0.6380177736282349,
+            ],
+        )
+        mujoco_arena.set_camera(
+            camera_name="agentviewright",
+            pos=[0.8586131746834771, 0.03, 1.6103500240372423],
+            quat=[
+                0.6380177736282349,
+                0.3048497438430786,
+                0.30484986305236816,
+                0.6380177736282349,
+            ],
+        )
+        mujoco_arena.set_camera(
             camera_name="leftagentview",
             pos=[0.6586131746834771, -0.5, 1.6103500240372423],
             quat=[
