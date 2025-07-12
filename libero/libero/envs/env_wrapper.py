@@ -46,7 +46,7 @@ class ControlEnv:
 
         controller_configs = suite.load_controller_config(default_controller=controller)
         
-        #############
+        ############# for absolute control
         controller_configs["control_delta"] = False
 
         problem_info = BDDLUtils.get_problem_info(bddl_file_name)
