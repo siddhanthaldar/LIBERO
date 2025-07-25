@@ -188,8 +188,8 @@ class Libero_Living_Room_Tabletop_Manipulation(BDDLBaseDomain):
     def _setup_camera(self, mujoco_arena):
         mujoco_arena.set_camera(
             camera_name="agentview",
-            pos=[0.8065773716836134, 0.0, 0.96],
-            # pos=[0.6065773716836134, 0.0, 0.96],
+            # pos=[0.8065773716836134, 0.0, 0.96], #########
+            pos=[0.6065773716836134, 0.0, 0.96],
             quat=[
                 0.6182166934013367,
                 0.3432307541370392,

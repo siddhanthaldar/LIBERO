@@ -38,6 +38,7 @@ class ControlEnv:
         camera_segmentations=None,
         renderer="mujoco",
         renderer_config=None,
+        action_type="delta",
         **kwargs,
     ):
         assert os.path.exists(
@@ -45,10 +46,11 @@ class ControlEnv:
         ), f"[error] {bddl_file_name} does not exist!"
 
         controller_configs = suite.load_controller_config(default_controller=controller)
-        
-        #############
-        controller_configs["control_delta"] = False
 
+        ############# change to control action type when initializing env #############
+        controller_configs["control_delta"] = True if action_type == "delta" else False
+        ################################################################################
+        
         problem_info = BDDLUtils.get_problem_info(bddl_file_name)
         # Check if we're using a multi-armed environment and use env_configuration argument if so
 

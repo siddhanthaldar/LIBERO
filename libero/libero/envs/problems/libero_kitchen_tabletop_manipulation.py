@@ -188,8 +188,8 @@ class Libero_Kitchen_Tabletop_Manipulation(BDDLBaseDomain):
     def _setup_camera(self, mujoco_arena):
         mujoco_arena.set_camera(
             camera_name="agentview",
-            pos=[0.8586131746834771, 0.0, 1.6103500240372423],
-            # pos=[0.6586131746834771, 0.0, 1.6103500240372423],
+            # pos=[0.8586131746834771, 0.0, 1.6103500240372423], ########
+            pos=[0.6586131746834771, 0.0, 1.6103500240372423],
             quat=[
                 0.6380177736282349,
                 0.3048497438430786,
