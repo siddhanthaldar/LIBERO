@@ -76,11 +76,12 @@ def get_problem_info(problem_filename):
                 domain_name = "robosuite"
             elif t == ":language":
                 group.pop(0)
-                language_instruction = group
+                # language_instruction = group
+                language_instruction = " ".join(group)
     return {
         "problem_name": problem_name,
         "domain_name": domain_name,
-        "language_instruction": " ".join(language_instruction),
+        "language_instruction": language_instruction,
     }
 
 
@@ -146,7 +147,8 @@ def robosuite_parse_problem(problem_filename):
                 get_scenes(t, scene_properties, group)
             elif t == ":language":
                 group.pop(0)
-                language_instruction = group
+                # language_instruction = group
+                language_instruction = " ".join(group)
 
             elif t == ":init":
                 group.pop(0)
